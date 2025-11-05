@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner {
+            height: 80vh;
+            background-color: gold;
+        }
+
+        .banner h1 {
+            padding-top: 30vh;
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            text-shadow: 2px 2px 2px grey;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+        }
+
+        ul li {
+            list-style: none;
+            width: 20%;
+            height: 25vh;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="animate__animated animate__backInDown">welcome to ducat india</h1>
+
+        <ul>
+            <li class="animate__animated animate__backInLeft animate__repeat-2"></li>
+            <li class="animate__animated animate__backInLeft animate__repeat-2"></li>
+            <li class="animate__animated animate__backInRight animate__repeat-2"></li>
+            <li class="animate__animated animate__backInRight animate__repeat-2"></li>
+        </ul>
+    </div>
+
+</body>
+</html>

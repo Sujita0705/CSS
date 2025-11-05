@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .fl{
+            float: left;
+        }
+        .new{
+            float: left;
+            margin-left: 1%;
+        }
+        .fr{
+            float: right;
+        }
+        .clr{
+            clear: both;
+        }
+        .bg1{
+            background-color: rgb(235, 229, 241);
+        }
+        .bg2{
+            background-color: rgb(107, 62, 151);
+        }
+        .wrapper{
+            height: 85vh;
+            width: 95%;
+            margin: 10vh auto;
+            background-color: rgb(144, 132, 132);
+            border: 0;
+            border-radius: 10px;
+        }
+        .col-1{
+            width: 75%;
+            height: 80vh;
+            margin-left: 2.5vh;
+            margin-top: 2.5vh;
+        }
+        .col-2{
+            width: 20%;
+            height: 80vh;
+            margin-top: 2.5vh;
+            margin-right: 4vh;
+        }
+        .row-1{
+            width: 100%;
+            height: 8vh;
+            margin-bottom: 1vh;
+        }
+        .row-1 p{
+            text-align: center;
+            line-height: 8vh;
+        }
+        .row-2{
+            width: 100%;
+            height: 13.4vh;
+            margin-bottom: 1vh;
+        }
+        .row-2 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .row-3{
+            width: 5.73%;
+            height: 8vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .row-3 p{
+            text-align: center;
+            line-height: 8vh;
+        }
+        .row-4{
+            width: 22% ;
+            height: 8vh;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 1.1vh;
+        }
+        .row-4 p{
+            text-align: center;
+            line-height: 8vh;
+        }
+        .line-1{
+            width:5.75% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-1 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-11{
+            width:12.42% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-11 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-12{
+            width:6.5% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-12 p{
+            text-align: center;
+            line-height: 6.4vh;
+        }
+        .line-13{
+            width:20% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-13 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-14{
+            width:39% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-14 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-15{
+            width:15.8% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-15 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-16{
+            width:100% ;
+            height: 6.4vh;
+            border: 0;
+            border-radius: 5px;
+            margin-bottom: 0.5vh;
+        }
+        .line-16 p{
+            text-align: center;
+            line-height: 6.4vh;
+        }
+        .line-17{
+            width:22.2% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+            margin-left: 1vh;
+        }
+        .line-17 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-18{
+            width:11.5% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-18 p{
+            text-align: center;
+            line-height: 6.4vh;
+        }
+        .row-5{
+            width: 100%;
+            height: 27.5vh;
+            margin-bottom: 1vh;
+        }
+        .row-5 p{
+            text-align: center;
+            line-height: 27.5vh;
+        }
+        .row-6{
+            width: 72%;
+            height: 27.7vh;
+            margin-bottom: 1vh;
+            margin-left: 1vh;
+        }
+        .row-6 p{
+            text-align: center;
+            line-height: 27.7vh;
+        }
+        .row-7{
+            width: 22%;
+            height: 27.7vh;
+            margin-bottom: 1vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .row-7 p{
+            text-align: center;
+            line-height: 27.7vh;
+        }
+        .row-8{
+            width:100% ;
+            margin-bottom: 1vh;
+            height: 13.4vh;
+        }
+        .row-8 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-2{
+            width:30.5% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+        }
+        .line-2 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-3{
+            width:30.5% ;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+            margin-right: 1vh;
+        }
+        .line-3 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+        .line-4{
+            width: 65%;
+            height: 13.4vh;
+            border: 0;
+            border-radius: 5px;
+            margin-right: 1vh;
+        }
+        .line-4 p{
+            text-align: center;
+            line-height: 13.4vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col-1 fl">
+            <div class="row-1">
+                <div class="row-3 bg1 fl"><p>esc</p></div>
+                <div class="row-3 bg1 new"><p>?</p></div>
+                <div class="row-3 bg1 new"><p>f2</p></div>
+                <div class="row-3 bg1 new"><p>f3</p></div>
+                <div class="row-3 bg1 new"><p>f4</p></div>
+                <div class="row-3 bg1 new"><p>f5</p></div>
+                <div class="row-3 bg1 new"><p>f6</p></div>
+                <div class="row-3 bg1 new"><p>f7</p></div>
+                <div class="row-3 bg1 new"><p>f8</p></div>
+                <div class="row-3 bg1 new"><p>f9</p></div>
+                <div class="row-3 bg1 new"><p>f10</p></div>
+                <div class="row-3 bg1 new"><p>f11</p></div>
+                <div class="row-3 bg1 new"><p>f12</p></div>
+                <div class="row-3 bg1 new"><p>prt sc</p></div>
+                <div class="row-3 bg1 fr"><p>delete</p></div>
+            </div>
+            <div class="row-2">
+                <div class="line-1 bg1 fl"><p>~</p></div>
+                <div class="line-1 bg1 new"><p>1</p></div>
+                <div class="line-1 bg1 new"><p>2</p></div>
+                <div class="line-1 bg1 new"><p>3</p></div>
+                <div class="line-1 bg1 new"><p>4</p></div>
+                <div class="line-1 bg1 new"><p>5</p></div>
+                <div class="line-1 bg1 new"><p>6</p></div>
+                <div class="line-1 bg1 new"><p>7</p></div>
+                <div class="line-1 bg1 new"><p>8</p></div>
+                <div class="line-1 bg1 new"><p>9</p></div>
+                <div class="line-1 bg1 new"><p>0</p></div>
+                <div class="line-1 bg1 new"><p>-</p></div>
+                <div class="line-1 bg1 new"><p>+</p></div>
+                <div class="line-11 bg1 fr"><p>backspace</p></div>
+            </div>
+            <div class="row-2">
+                <div class="line-12 bg1 fl"><p>tab</p></div>
+                <div class="line-1 bg1 new"><p>Q</p></div>
+                <div class="line-1 bg1 new"><p>W</p></div>
+                <div class="line-1 bg1 new"><p>E</p></div>
+                <div class="line-1 bg1 new"><p>R</p></div>
+                <div class="line-1 bg1 new"><p>T</p></div>
+                <div class="line-1 bg1 new"><p>Y</p></div>
+                <div class="line-1 bg1 new"><p>U</p></div>
+                <div class="line-1 bg1 new"><p>I</p></div>
+                <div class="line-1 bg1 new"><p>O</p></div>
+                <div class="line-1 bg1 new"><p>P</p></div>
+                <div class="line-1 bg1 new"><p>[</p></div>
+                <div class="line-1 bg1 new"><p>]</p></div>
+                <div class="line-18 bg1 fr"><p>\</p></div> 
+            </div>
+            <div class="row-2">
+                <div class="line-11 bg1 fl"><p>caps lock</p></div>
+                <div class="line-1 bg1 new"><p>A</p></div>
+                <div class="line-1 bg1 new"><p>S</p></div>
+                <div class="line-1 bg1 new"><p>D</p></div>
+                <div class="line-1 bg1 new"><p>F</p></div>
+                <div class="line-1 bg1 new"><p>G</p></div>
+                <div class="line-1 bg1 new"><p>H</p></div>
+                <div class="line-1 bg1 new"><p>J</p></div>
+                <div class="line-1 bg1 new"><p>K</p></div>
+                <div class="line-1 bg1 new"><p>L</p></div>
+                <div class="line-1 bg1 new"><p>;</p></div>
+                <div class="line-1 bg1 new"><p>'</p></div> 
+                <div class="line-11 bg1 fr"><p>enter</p></div> 
+            </div>
+            <div class="row-2">
+                <div class="line-15 bg1 fl"><p>shift</p></div>
+                <div class="line-1 bg1 new"><p>Z</p></div>
+                <div class="line-1 bg1 new"><p>X</p></div>
+                <div class="line-1 bg1 new"><p>C</p></div>
+                <div class="line-1 bg1 new"><p>V</p></div>
+                <div class="line-1 bg1 new"><p>B</p></div>
+                <div class="line-1 bg1 new"><p>N</p></div>
+                <div class="line-1 bg1 new"><p>M</p></div>
+                <div class="line-1 bg1 new"><p>,</p></div>
+                <div class="line-1 bg1 new"><p>.</p></div>
+                <div class="line-1 bg1 new"><p>/</p></div>
+                <div class="line-15 bg1 fr"><p>shift</p></div> 
+            </div>
+            <div class="row-2">
+                <div class="line-1 bg1 fl"><p>ctrl</p></div>
+                <div class="line-1 bg1 new"><p>fn</p></div>
+                <div class="line-1 bg1 new"><p><img src="Image/download.png" height = "25px" width = "25px" alt="window"></p></div>
+                <div class="line-1 bg1 new"><p>alt</p></div>
+                <div class="line-14 bg1 new"></div>
+                <div class="line-1 bg1 new"><p>alt</p></div>
+                <div class="line-1 bg1 new"><p>ctrl</p></div>
+                <div class="line-1 bg1 new"><p>&leftarrow;</p></div>
+                <div class="line-1 new">
+                    <div class="line-16 bg1"><p>&uparrow;</p></div>
+                    <div class="line-16 bg1"><p>&downarrow;</p></div>
+                </div>
+                <div class="line-1 bg1 fr"><p>&rightarrow;</p></div>
+            </div>
+        </div>
+        <div class="col-2 fr">
+            <div class="row-1">
+                <div class="row-4 bg1 fl"><p>home</p></div>
+                <div class="row-4 bg1 new"><p>end</p></div>
+                <div class="row-4 bg1 new"><p>pg up</p></div>
+                <div class="row-4 bg1 fr"><p>pg dn</p></div>
+            </div>
+            <div class="row-2">
+                <div class="line-17 bg1 fl"><p>num</p></div>
+                <div class="line-17 bg1 new"><p>/</p></div>
+                <div class="line-17 bg1 new"><p>*</p></div>
+                <div class="line-17 bg1 fr"><p>-</p></div>
+            </div>
+            <div class="row-5">
+                <div class="row-6 fl">
+                    <div class="row-8">
+                        <div class="line-3 bg1 fl"><p>7</p></div>
+                        <div class="line-2 bg1 new"><p>8</p></div>
+                        <div class="line-2 bg1 fr"><p>9</p></div>
+                    </div>
+                    <div class="row-8">
+                        <div class="line-3 bg1 fl"><p>4</p></div>
+                        <div class="line-2 bg1 new"><p>5</p></div>
+                        <div class="line-2 bg1 fr"><p>6</p></div>
+                    </div>
+                </div>
+                <div class="row-7 bg1 fr"><p>+</p></div>
+            </div>
+            <div class="row-5">
+                <div class="row-6 fl">
+                    <div class="row-8">
+                        <div class="line-3 bg1 fl"><p>1</p></div>
+                        <div class="line-2 bg1 new"><p>2</p></div>
+                        <div class="line-2 bg1 fr"><p>3</p></div>
+                    </div>
+                    <div class="row-8">
+                        <div class="line-4 bg1 fl"><p>0</p></div>
+                        <div class="line-2 bg1 fr"><p>.</p></div>
+                    </div>
+                </div>
+                <div class="row-7 bg1 fr"><p>enter</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

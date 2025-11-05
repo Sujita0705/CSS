@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            /* width: 100%; */
+            padding: 2% 5%;
+
+            background-color: rgb(89, 81, 188);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #title {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .head ul {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .head ul li {
+            list-style: none;
+        }
+
+        .head ul li a {
+            text-decoration: none;
+
+            color: white;
+            text-transform: uppercase;
+        }
+
+        button {
+            display: none;
+        }
+
+        @media(max-width:1080px) {
+            button {
+                display: block;
+            }
+
+            .head ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="head">
+        <a href="#" id="title">Website Name</a>
+        <button>Menu</button>
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

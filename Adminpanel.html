@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(213, 213, 168);
+        }
+        .fl{
+            float: left;
+        }
+        .new{
+            float: left;
+            margin-left: 2vh;
+        }
+        .fr{
+            float: right;
+        }
+        .clr{
+            clear: both;
+        }
+        .bg1{
+            background-color: rgb(105, 105, 172);
+        }
+        .bg2{
+            background-color: rgb(203, 94, 86);
+        }
+        .bg3{
+            background-color: rgb(200, 148, 28);
+        }
+        .bg4{
+            background-color: rgb(44, 191, 39);
+        }
+        .wrapper{
+            background-color: white;
+            width: 70%;
+            height: 90vh;
+            margin: 5vh auto;
+            position: relative;
+        }
+        .head{
+            background-color: black;
+            width: 100%;
+            height: 5vh;
+        }
+        .box{
+            width: 12vh;
+            height: 5vh;
+            border: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .box select{
+            background-color: black;
+            color: white;
+            border: none;
+            margin-top: 1.5vh;
+        }
+        .box p{
+            color: white;
+            font-size: 2vh;
+            margin: auto;
+            line-height: 5vh;
+            text-align: center;
+        }
+        .box-1 p{
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 5vh;
+            margin-left: 8vh;
+        }
+        .mid{
+            margin-top: 5vh;
+            margin-left: 1vh;
+            font-weight: 900;
+            font-size: 3vh;
+        }
+        .box-2{
+            width: 24.1%;
+            height: 13vh;
+            margin-top: 2vh;
+            border-radius: 5px;
+            margin-left: 1vh;
+            margin-right: 0.3vh;
+            padding-left: 0.5vh;
+            position: relative;
+        }
+        .box-2 p{
+            color: white;
+            text-align: right;
+            padding-right: 2vh;
+        }
+        .box-3 svg{
+            margin-top: 1vh;
+        }
+        .box-4{
+            background-color: whitesmoke;
+            position: absolute;
+            width: 98%;
+            height: 3vh;
+            bottom: 1px;
+            margin-left: -0.12vh;
+            border: none;
+            border-radius: 2px;
+        }
+        .box-4 svg{
+                margin-right: 1vh;
+        }
+        .box-41{
+            font-size: small;
+            margin-left: 1vh;
+            line-height: 3vh;
+        }
+        .form{
+            width: 25%;
+            height: 47vh;
+            background-color: white;
+            position: absolute;
+            bottom: 16vh;
+            left: 42vh;
+            border: 1px solid rgb(223, 220, 220);
+            border-radius: 2px;
+        }
+        .update{
+            background-color: rgb(203, 94, 86);
+            width: 100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            color: white;
+            text-align: center;
+        }
+        .form h4{
+            text-align: center;
+            margin-top: 5px;
+        }
+        .option{
+            margin-top: 3vh;
+            margin-left: 1vh;
+            margin-bottom: 1vh;
+        }
+        .option1{
+            margin-top: 3vh;
+            margin-right: 13vh;
+            margin-bottom: 1vh;
+        }
+        .col-1{
+            width: 50%;
+            height: 37.3vh;
+        }
+        .col-2 input{
+            border: 1px solid rgb(223, 220, 220);
+            border-radius: 3px;
+            padding-top: 1px;
+        }
+        .col-2{
+            background-color: rgb(246, 243, 243);
+            padding: 1vh;
+            border: 1px solid rgb(223, 220, 220);
+            margin-top: 1vh;
+        }
+        .col-3{
+            margin-left: 1vh;
+            margin-top: 1vh;
+            height: 3vh;
+        }
+        .col-3 input{
+            border: 1px solid rgb(223, 220, 220);
+            border-radius: 3px;
+            padding-top: 1px;
+        }
+        .place{
+            margin-left: 7.5vh;
+        }
+        .place1{
+            margin-left: 6.5vh;
+        }
+        .place2{
+            margin-left: 5.5vh;
+        }
+        .place3{
+            margin-left: 2.5vh;
+        }
+        .form-1{
+            width: 25%;
+            height: 55vh;
+            background-color:white;
+            position: absolute;
+            bottom: 8vh;
+            right: 42vh;
+            border: 1px solid rgb(223, 220, 220);
+            border-radius: 2px;
+        }
+        .form-1 p{
+            background-color: rgb(105, 105, 172);
+            width: 100%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            color: white;
+            text-align: center;
+        }
+        .form-1 h4{
+            text-align: center;
+            margin-top: 6px;
+        }
+        .form-1 h5{
+            margin-top: 2vh;
+        }
+        .form-1 input{
+            width: 100%;
+            margin-top: 2px;
+            border: 1px solid rgb(223, 220, 220);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="box-1 fl"><p>UserSpice♨</p></div>
+            <div class="box fr"><select name="admin" id="">
+                <option>🙎‍♂️ admin</option>
+                <option>Log In</option>
+                <option>Sign In</option>
+                <option>Info</option>
+            </select></div>
+            <div class="box bg3 fr"><p>Admin Panel</p></div>
+            <div class="box bg2 fr"><p>Sign Out</p></div>
+            <div class="box bg1 fr"><p>Account Info</p></div>
+        </div>
+        <div class="mid"><p>Administrator Control Panel</p></div>
+        <hr>
+            <div class="box-2 bg1 fl"><div class="box-3 fl"><svg xmlns="http://www.w3.org/2000/svg" width="60px" height="50px" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#f9fafb" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg></div>
+                <div class="box-3 fr"><p>You have
+                    <br> <font style="font-size: 3vh; font-weight: 900;">18</font> <br>
+                    pages</p>
+                </div>
+                <div class="box-4">
+                    <div class="box-41 fl"><p style="color:rgb(105, 105, 172) ;">Manage Them</p></div>
+                <div class="box-41 fr"><svg xmlns="http://www.w3.org/2000/svg"   width="10px" height="10px"    viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#6969ac" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zm395.3 11.3l-112 112c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8l0-64-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-64c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l112 112c6.2 6.2 6.2 16.4 0 22.6z"/></svg></div>
+                </div>
+            </div>
+        <div class="box-2 bg2 new"><div class="box-3 fl"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/></svg></div>
+        <div class="box-3 fr"><p>You have
+            <br> <font style="font-size: 3vh; font-weight: 900;">2</font> <br>
+            Permission Levels</p></div>
+            <div class="box-4">
+                <div class="box-41 fl"><p style="color:rgb(203, 94, 86) ;">Manage Them</p></div>
+                <div class="box-41 fr"><svg xmlns="http://www.w3.org/2000/svg"   width="10px" height="10px"   viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#cb5e56" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zm395.3 11.3l-112 112c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8l0-64-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-64c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l112 112c6.2 6.2 6.2 16.4 0 22.6z"/></svg></div>
+            </div></div>
+        <div class="box-2 bg3 new"><div class="box-3 fl"><svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fcfcfc" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg></div>
+        <div class="box-3 fr"><p>You have
+            <br> <font style="font-size: 3vh; font-weight: 900;">2</font> <br>
+            Users</p></div>
+            <div class="box-4">
+                <div class="box-41 fl"><p style="color: rgb(200, 148, 28);">Manage Them</p></div>
+                <div class="box-41 fr"><svg xmlns="http://www.w3.org/2000/svg"   width="10px" height="10px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#c8941c" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zm395.3 11.3l-112 112c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8l0-64-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-64c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l112 112c6.2 6.2 6.2 16.4 0 22.6z"/></svg></div>
+            </div></div>
+        <div class="box-2 bg4 fr"><div class="box-3 fl"><svg xmlns="http://www.w3.org/2000/svg"  width="50px" height="50px"  viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg></div>
+        <div class="box-3 fr"><p>You have
+            <br> <font style="font-size: 3vh; font-weight: 900;">9</font> <br>
+            Email Settings</p></div>
+            <div class="box-4">
+                <div class="box-41 fl"><p style="color: rgb(44, 191, 39);">Manage Them</p></div>
+                <div class="box-41 fr"><svg xmlns="http://www.w3.org/2000/svg"   width="10px" height="10px"  viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#2cbf27" d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zm395.3 11.3l-112 112c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8l0-64-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-64c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l112 112c6.2 6.2 6.2 16.4 0 22.6z"/></svg></div>
+            </div></div></div>
+            <div class="form fl"><p class="update">Update Settings</p>
+                <h4>UserSpice Settings</h4>
+                <h4>(some are not working yet!)</h4>
+                <div><h5 class="option fl">Option</h5></div>
+                <div><h5 class="option1 fr">Settings</h5></div>
+                <div class="clr"></div>
+                <p class="col-2">Site Name (working)
+                <input class="place" type="text" placeholder="UserSpice">
+            </p>
+                <p class="col-3">Recaptcha (working)
+                <input class="place"  type="text" placeholder="Disabled"></p>
+                <p class="col-2">Login Using (disabled)
+                <input class="place2"  type="text" placeholder="Username"></p>
+                <p class="col-3">Force SSL (disabled)
+                <input class="place"  type="text" placeholder="No"></p>
+                <p class="col-2">ForcePass. Reset(disabled)
+                <input class="place3" type="text" placeholder="No"></p>
+                <p class="col-3">Site Offline (working)
+                <input class="place1" type="text" placeholder="No"></p>
+
+            </div>
+            <div class="form-1 fr"><p>Save CSS Settings</p>
+            <h4>UserSpice CSS Settings</h4>
+            <h5>Primary Userspice CSS (Loaded 1st)
+             <br>   <input type="text"  placeholder="css/bootstrap.min.css">
+            </h5>
+            <h5>Secondary Userspice CSS (Loaded 2nd)
+                <br>   <input type="text"  placeholder="css/sb-admin.css">
+               </h5>
+               <h5>Custom Userspice CSS (Loaded 3rd)
+                <br>   <input type="text"  placeholder="css/custom.css">
+               </h5>
+               <br>
+               <h4>Front End CSS Settings</h4>
+            <h5>Primary Front End CSS (Loaded 1st)
+             <br>   <input type="text" placeholder="css/bootstrap.min.css">
+            </h5>
+            <h5>Secondary Front End CSS (Loaded 2nd)
+                <br>   <input type="text"  placeholder="css/sb-admin.css">
+               </h5>
+               <h5>Custom Front End CSS (Loaded 3rd)
+                <br>   <input type="text"  placeholder="css/custom.css">
+               </h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

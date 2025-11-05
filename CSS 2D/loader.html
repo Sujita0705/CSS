@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader {
+  height: 90px;
+  aspect-ratio: 1;
+  border: 3px solid #524656;
+  position: relative;
+  margin: 20vh auto;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #CF4647;
+  animation: 
+    l8-0 .57s infinite alternate linear -.13s,
+    l8-1 .35s infinite alternate linear -.23s;
+}
+.loader:after {
+  background: #45ADA8;
+  animation: 
+    l8-0 .29s infinite alternate linear -.11s,
+    l8-1 .51s infinite alternate linear -.34s;
+}
+@keyframes l8-0 {
+  0%,5%  {bottom: 0%}
+  95%,to {bottom: 80%}
+}
+@keyframes l8-1 {
+  0%,5%  {left: 0%}
+  95%,to {left: 80%}
+}
+.loader1 {
+  width: 80px;
+  height: 40px;
+  color: #000;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  padding: 3px;
+  background: 
+    repeating-linear-gradient(90deg,currentColor 0 10px,#0000 0 15px) 
+    0/0% no-repeat content-box content-box;
+  position: relative;
+  margin: 20vh auto;
+  box-sizing: border-box;
+  animation: l5 2s infinite steps(6);
+}
+.loader1::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 100%;
+  width: 10px;
+  background:
+    linear-gradient(
+        #0000   calc(50% - 7px),currentColor 0 calc(50% - 5px),
+        #0000 0 calc(50% + 5px),currentColor 0 calc(50% + 7px),#0000 0) left /100% 100%,
+    linear-gradient(currentColor calc(50% - 5px),#0000        0 calc(50% + 5px),currentColor 0) left /2px 100%,
+    linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;
+  background-repeat:no-repeat;
+}
+@keyframes l5 {
+    100% {background-size:120%}
+}
+    </style>
+</head>
+<body>
+<div class="loader"></div>
+<div class="loader1"></div>
+</body>
+</html>

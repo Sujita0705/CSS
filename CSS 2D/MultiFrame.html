@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .circle{
+            height: 300px;
+            width: 300px;
+            margin: 25vh auto;
+            background-color: blue;
+            border-radius: 50%;
+            animation-name: color;
+            animation-duration: 4s;
+        }
+        @keyframes color{
+            0%{
+                background-color: blue;
+            }
+            25%{
+                background-color: brown;
+            }
+            50%{
+                background-color: blueviolet;
+            }
+            75%{
+                background-color: blanchedalmond;
+            }
+            100%{
+                background-color: aqua;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>

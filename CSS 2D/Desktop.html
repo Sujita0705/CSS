@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .head{
+            background-color: green;
+            height: 10vh;
+            width: 100%;
+            text-align: center;
+            color: azure;
+            line-height: 10vh;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .nav{
+            height: 80vh;
+            width: 25%;
+            background-color: rgb(185, 144, 224);
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+        .mid{
+            height: 80vh;
+            width: 59%;
+            background-color: rgb(237, 46, 7);
+            margin-left: 1vh;
+            margin-right: 1vh;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+        .aside{
+            height: 80vh;
+            width: 15%;
+            background-color: blueviolet;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+        .footer{
+            background-color: green;
+            height: 8vh;
+            width: 100%;
+            text-align: center;
+            color: azure;
+            line-height: 8vh;
+        }
+        .nav li{
+            padding-top: 5px;
+            padding-bottom:5px ;
+            background-color: antiquewhite;
+            margin-top: 2.3vh;
+            width: 70%;
+            padding-left: 15%;
+            list-style: none;
+            text-align: center;
+        }
+        @media(max-width:1080px){
+            .head,.footer,.aside{
+                width: 100%;
+            }
+            .nav{
+                width: 25%;
+            }
+            .mid{
+                width: 70%;
+            }
+        }
+        @media(max-width:750px){
+            .head,.aside,.footer,.mid,.nav{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head"><h1>WEBSITE</h1></div>
+    <div class="row">
+    <div class="nav">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+        </ul>
+    </div>
+    <div class="mid"></div>
+    <div class="aside"></div>
+    </div>
+    <div class="footer"><p>&copy;Website Name</p></div>
+</body>
+</html>

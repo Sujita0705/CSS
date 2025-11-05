@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 2vh;
+        }
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            flex-flow: row wrap;
+        }
+        .card1
+        {
+            height: 50vh;
+            width: 30vh;
+            background-image: radial-gradient(blue,pink,red);
+        }
+        .card2
+        {
+            height: 50vh;
+            width: 25vh;
+            background-image: radial-gradient( red 10%,yellow 20%,green 50%);
+        }
+        .card3
+        {
+            height: 50vh;
+            width: 25vh;
+            background-image: radial-gradient(circle,green,violet,rgb(0, 255, 234));
+        }
+        .card4
+        {
+            height: 50vh;
+            width: 25vh;
+            background-image: radial-gradient(closest-side at 60% 50%,red,orange,green);
+        }
+        .card5
+        {
+            height: 50vh;
+            width: 25vh;
+            background-image: repeating-radial-gradient(red,rgb(0, 242, 255) 10%,pink 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="card1"></div>
+    <div class="card2"></div>
+    <div class="card3"></div>
+    <div class="card4"></div>
+    <div class="card5"></div>
+</body>
+</html>
